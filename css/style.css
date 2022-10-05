@@ -1,0 +1,965 @@
+/* &display=swap */
+@import "reset.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap");
+
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: rgb(214, 245, 246);
+}
+/* ================================================================ */
+body {
+	font-family: serif;
+	font-family: "Comfortaa", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.header *:last-child {
+	margin-bottom: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 5px solid #056b68;
+}
+
+.text-header {
+	padding: 20px 0px 15px 0px;
+	text-align: right;
+}
+
+/* Псевдокласс */
+/* селектор: псевдокласс {
+	стили учитывая псевдокласс
+}*/
+
+
+/* Псевдокласс состояния хараткризирует его состояние*/
+
+/* принавождении при наведении */
+.text-header:hover {
+	color: rgb(165, 117, 204);
+	text-transform: uppercase;
+	padding: 50px 150px 15px 0px;
+	background: url(../img/sandbox.png) center right/90px no-repeat;
+	font-weight: 700;
+	font-size: 35px;
+}
+
+h1 {
+	text-transform: none;
+	text-align: center;
+	color: #666666;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.block-box-link {
+	padding-top:15px ;
+	text-align: center;
+}
+.text-box {
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+	padding: 15px 0px 0px 15px;
+	line-height: 1.5;
+}
+
+/* для span */
+.text-box span,
+.text-box-2 span,
+.text-links span,
+.text-box-3 span,
+.text-box-4 span {
+	color: #043c46;
+	font-weight: 700;
+	letter-spacing: 1px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.block-box {
+	margin: 0px 0px 50px 0px;
+	padding: 0px 20px;
+}
+
+.block-box:hover {
+	background-color: rgba(168, 209, 129, 0.5);
+
+}
+
+/* Важно сначала стили для :hover  а потом для :active */
+/* состояние при наведении */
+.google:hover {
+	color: #bbca0f;
+	font-weight: 700;
+	font-size: 35px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* состояние при Нажатии */
+.google:active {
+	color: #c51db4;
+	font-weight: 700;
+	font-size: 55px;
+	text-decoration: line-through;
+	cursor: pointer;
+}
+
+.box {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	transition: all 0.2s ease;
+	background-color: #4a799c;
+}
+
+.box:hover:nth-child(even) {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	cursor: pointer;
+	background: #074946 url(../img/donut.png) center / 50px no-repeat;
+}
+
+.box:hover:nth-child(odd) {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	border-radius: 50px;
+	cursor: pointer;
+	background: #9bece8 url(../img/lollipop.png) center / 50px no-repeat;
+}
+
+.block-button {
+	text-align: center;
+	margin: 0px 0px 50px 0px;
+}
+.text-box-button{
+	padding: 0px 15px;
+	margin: 0px 0px 30px 0px;
+	line-height: 1.5;
+}
+
+.btn{
+	background-color: #196c79;
+	/* Без этого свойства кнопака разтягивается на всю ширину экрана */
+   display: inline-block; 
+	padding: 15px 30px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgb(255, 255, 255);
+	box-shadow: 0px 7px 2px 2px #1c5f8c;
+}
+
+
+.btn:hover {
+	box-shadow: 0px 10px 5px 5px #19dac9;
+}
+
+.btn:active {
+	box-shadow: inset 0px 10px 5px 5px #a0df0f;
+}
+
+/* .btn:visited{ 
+	background-color: #b47ca2;
+	color: rgb(17, 10, 10);
+} */
+
+/* block-visited {*/
+.block-visited{
+	text-align: center;
+	margin: 0px 0px 50px 0px;
+}
+.block-visited:hover {
+	background-color: #0eebe0;
+	padding: 15px;
+	box-shadow: 5px 5px 5px 10px #a8a8a8;
+}
+
+.block-visited:active {
+	background-color: #effb81;
+	box-shadow: 5px 5px 5px 10px #a8a8a8;
+}
+
+.text-visited {
+	padding: 0px 20px 0px 20px;
+	margin: 0px 0px 30px 0px;
+	line-height: 1.5;
+}
+
+.link-visited {
+	background-color: #0eebe0;
+	display: inline-block;
+	text-align: center;
+	padding: 12px 30px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgb(255, 255, 255);
+	box-shadow: 0px 5px 0px 0px #2882be;
+}
+
+.link-visited:visited {
+	margin: 1px 0px 0px 0px;
+	background-color: #4da4a4;
+	color: #333e46;
+	box-shadow: 0px 5px 0px 0px #1d2225;
+}
+
+
+
+/* блок .link-list  */
+.link-list {
+	text-align: left;
+	padding: 0px 20px 0px 20px;
+	margin: 0px 0px 50px 0px;
+	font-size: 25px;
+}
+
+
+.item-1 {
+	padding: 0px 0px 0px 50px;
+	color: #056b68;
+}
+.item-1:visited {
+	color: #900095;
+}
+
+.item-2 {
+	padding: 0px 0px 0px 50px;
+	color: #056b68;
+}
+.item-2:visited {
+	color: #959200;
+}
+
+.item-3 {
+	padding: 0px 0px 0px 50px;
+	color: #056b68;
+}
+.item-3:visited {
+	color: #19c309;
+}
+
+.item-4 {
+	padding: 0px 0px 0px 50px;
+	color: #056b68;
+}
+.item-4:visited {
+	color: #f0b619;
+}
+.item-5 {
+	padding: 0px 0px 0px 50px;
+	color: #056b68;
+}
+.item-5:visited {
+	color: #be70eb;
+}
+
+.link-found {
+	margin: 0px 0px 10px 0px;
+}
+
+
+/* Блок .block-focus*/
+.block-focus {
+	text-align: center;
+	font-size: 20px;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+.focus-1,
+.focus-2,
+.focus-3 {
+	/* ставлю ымрути в ряд */
+	display: inline-block; 
+	padding: 0px 15px;
+	min-height: 70px;
+	max-width: 300px;
+	border-radius: 80px;
+	margin: 15px auto 15px;
+} 
+
+.focus-item {
+	display: inline-block;
+	min-height: 30px;
+	max-width: 500px;
+	border-radius: 40px;
+	margin: 20px auto 0px;
+	border: 2px solid #2c8d75;
+}
+
+/* Класс состояния  focus обводка при нажатии кнопики tab */
+.focus-item:focus {
+	outline: 4px dashed #073332;
+	padding: 0px 20px 0px 20px;
+}
+
+ /* .focus-item:focus {
+	outline: none;
+}  */
+
+
+/* Блок  block-box-target*/
+.text-box-target{
+	margin: 0px 15px 20px 15px;
+	text-align: center;
+	line-height: 1.5;
+	font-size: 25px;
+}
+
+
+.containt-button{
+   text-align: center;
+	background: radial-gradient(circle, rgb(241, 224, 231) 0%, rgb(76, 141, 216) 90%);
+	border-radius: 105px;
+	margin-bottom: 40px;
+}
+
+.girl-image{
+	display: inline-block;
+	padding: 40px 7px 0px 7px;
+}
+
+.btn,
+.btn-close{
+	/* display: inline-block; */
+	padding: 15px;
+	border-radius: 35px;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 1.25;
+	max-width: 420px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(29, 160, 160);
+	box-shadow: 2px 6px 0px 3px rgb(1, 94, 122);
+}
+
+
+.block-containt {
+	text-align: center; 
+	/* display: none; */
+	margin: 0px 0px 50px 0px;  
+	background-image: linear-gradient(
+		40deg,
+		rgb(62, 139, 239) 0%,
+		rgb(162, 205, 121) 19%,
+		rgb(160, 218, 210) 32%,
+		rgb(167, 214, 238) 42%,
+		hsl(202deg 68% 81%) 51%,
+		hsl(204deg 66% 91%) 58%,
+		hsl(0deg 0% 100%) 65%,
+		hsl(58deg 61% 91%) 71%,
+		hsl(58deg 63% 81%) 77%,
+		hsl(58deg 67% 68%) 83%,
+		hsl(48deg 40% 76%) 88%,
+		rgb(74, 212, 236) 94%,
+		rgb(21, 110, 110) 100%);
+	border-radius: 45px;
+	 padding: 0px 0px 20px 0px; 
+}
+
+.block-containt:target {
+	 display: block;
+}
+
+.content {
+	display: inline-block;
+	margin: 0px 40px 20px 0px;
+}
+
+
+.girl-image {
+	min-width: 300px;
+	max-height: 250px;
+}
+
+/*Псевдокоаси полження у коді!!!!  */
+
+.pseudo-text {
+	text-align: center;
+}
+ 
+.pseudo-text span {
+	font-weight: 800;
+	color: #0a4f4d;
+	letter-spacing: 5px;
+	font-style: italic; 
+}
+
+.block-pseudo-text p {
+	margin: 50px 0px 50px 0px;
+	background-color: #70d2e1; 
+	color: #ffffff;
+	padding: 30px;
+	line-height: 1.6;
+	text-align: justify;
+}
+
+/* обращаюсь ко всем span во всех текстах р */
+ p span {
+	color: #2e4bc0;
+	line-height: 1.6;
+	font-weight: 700;
+	font-size: 25px; 
+}  
+
+
+
+/* Обращаемся в первому ребенку внутри .pseudo-text */
+.pseudo-text span:first-child {
+	/* Именно к первому ребенку span в этом классе   */
+  /* background-color: #da6f1de0;
+	box-shadow: inset 0 0 10px #ffffff;  */
+}
+
+/* Обращаюсь по типу к первому по типу  */
+.pseudo-text span:first-of-type {
+	background-color: #942aa4;
+	box-shadow: inset 20px 0 20px #ffffff;
+}
+
+/*Обращение внутри блока .block-pseudo-text к перврму елементу по типу!!! Тут у меня это span */
+/* .block-pseudo-text span:first-of-type {
+	background-color: #2aa43e; 
+}  */
+
+/* Обращаемся к любому первому єлементу внутри родительского блока .block-pseudo-text
+тут в мене це Span!!!!  */
+/* .block-pseudo-text *:first-child {
+	background-color: #eb630e;
+}   */
+
+/* Обращаемся к любому первому єлементу внутри родительского блока .block-pseudo-text.  У мене тут це span, перший элемент у родительскьком p .block-pseudo-text */
+.block-pseudo-text p :first-child {
+	/* background-color: #e96828; */
+} 
+
+/* .block-pseudo-text p:first-of-type {
+	/* Обращаемся в первому элементу по типуб то есть здесь это параграф p в родительском блоке .block-pseudo-text  
+ background-color: #b65acb;
+	box-shadow: inset 0 0 20px #ffffff;  } */
+
+
+
+	/* .block-pseudo-text p:last-child {
+Обращаемся в последнему ребенку, то есть здесь это параграф p в родительском блоке .block-pseudo-text  
+	 background-color: #20801e;
+	box-shadow: inset 0 0 10px #ffffff; 
+} 
+ */
+
+/* .block-pseudo-text p:last-of-type {
+	/* работает даже если после него есть еще какой-то елементы */
+	/* Именно параграф по типу,  к последнему обьекту по типу. тут это параграф р 
+   background-color: #e563e9;
+	box-shadow: inset 0 0 10px #ffffff;  
+}  */
+
+.block-pseudo-text p:nth-child(3),
+.block-pseudo-text p:nth-child(2),
+.block-pseudo-text p:nth-child(5) {
+	/* К конкретному элементу, например 3 2 5*/
+	/* background-color: #47d18c;
+	box-shadow: inset 0 0 30px #ffffff;  */
+}
+.block-pseudo-text p:nth-child(5) {
+	/* background-color: #830d1f;
+	box-shadow: inset 0 0 30px #ffffff;  */
+}
+
+.block-pseudo-text p:nth-child(odd) {
+	/* ко всіх четным */
+	 /* background-color: #d8ca71;  */
+}
+
+
+.block-pseudo-text p:nth-child(even) {
+	/* до всіх  нечетным */
+	 /* background-color: #4bc7bd;  */
+}
+
+
+.block-pseudo-text p:nth-child(2n) {
+	/* каждый второй параграф */
+	/* background-color: #74137b;
+	box-shadow: inset 0 0 30px #ffffff; */
+}
+.block-pseudo-text p:nth-child(2n + 3) {
+	/* каждый второй параграф начиная из третьего*/
+	/* background-color: #52e9ec;
+	box-shadow: inset 0 0 30px #ffffff;  */
+}
+
+.block-pseudo-text p:nth-of-type(1) {
+	 /* background-color: #5c52ec;
+	box-shadow: inset 0 0 30px #ffffff;  */
+}
+
+/* Обращение к  конкретным элементам по типу */
+.block-pseudo-text p:nth-of-type(odd) {
+	 /* background-color: #9c1d5f;
+	box-shadow: inset 0 0 30px #ffffff;  */
+}
+.block-pseudo-text p:nth-of-type(even) {
+	/* background-color: #46408e;
+	box-shadow: inset 0 0 30px #ffffff;  */
+}
+
+
+.block-pseudo-text p:first-of-type {
+	 /* background-color: #094f49; 
+	 box-shadow: inset 0 0 30px #ffffff; */
+}
+
+.block-pseudo-text p:last-child {
+	 margin-bottom: 50px; 
+}
+
+/* Попробую виключення за допомогою (not) */
+.block-pseudo-text p:not(.text){
+	background-color: #f58f8f; 
+}
+
+/* Попробую виключення за допомогою (not) c псевдоклассом */
+.block-pseudo-text p:not(:last-child){
+	background-color: #ad71ce; 
+	/* используем для скритие последних отступов */
+	margin-bottom: 50px; 
+}
+
+
+/* Попробую виключення за допомогою (not) c псевдоклассом задаем отступ но не последний!!! */
+.block-pseudo-text *:last-child{
+	margin-bottom: 50px; 
+}
+
+
+
+
+/* При наведенні */
+.block-pseudo-text p:hover {
+	background-color: #d3e66b;
+	box-shadow: 0 0 40px #ffffff;
+}
+
+/*  при нажатті */
+.block-pseudo-text p:active {
+	background-color: #54f822;
+	box-shadow: 0 0 40px #ffffff;
+}
+
+
+/* Псевдоэлементы!!!! */ 
+/* !!!! Обращение к первой строке в классе р !!!!*/
+ /* .block-pseudo-text p::first-line {
+	color: #4bf0b9;
+	font-weight: 900;
+	font-size: 25px;
+}  */
+
+
+/* Befor after это!!!! строчные!!!! */
+/* !!!Не работают без параметра content: "" */
+/* Мы можеи добавлять что-то до контекта  */
+.block-pseudo-text p::before {
+	/* можно вставить текст */
+	/* content: "Hi!!!."; */
+ color: #19c309;
+ font-weight: 700;
+	content: "";
+	/* перевожу картинку и строчный тип */
+	display: inline-block; 
+	width: 80px;
+	height: 90px;
+	background: url(../img/cook-girl.png) 0 0 / 70px no-repeat;
+	margin: -190px -30px 0px 0px;
+}
+
+ 
+.block-pseudo-text p:hover::before {
+	transition: all 0.4s ease 0s;
+	transform: rotate(360deg) scale(2.0);
+}
+
+
+
+
+/* заголовка */
+.title-list-pseudo {
+	text-align: center; 
+	font-size: 35px;
+	margin: 0px 0px 30px 0px;
+	line-height: 1.5;
+}
+
+/* стилизация заголовка с помощю псевдокласса ::after  */
+ .title-list-pseudo::after {
+	content: "";
+	display: block;
+	height: 4px;
+	width: 100%;
+	margin: 10px 0px 0px 0px;
+	background-color: #055a5e;
+} 
+
+.list-pseudo{
+	margin: 0px 0px 50px 0px;
+}
+
+.block-list li{
+	color: #2e695c;
+	font-weight: 700;
+	font-size: 25px;
+	margin: 0px 0px 20px 40px;
+}
+
+.block-list li::before {
+	content: "";
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+   padding: 0px 0px 0px 40px;    
+	background: url("..//img/donut.png") 0 0 / 20px no-repeat;
+	
+}
+
+.block-list li:hover {
+	content: "";
+	display: inline-block; 
+   transform:scale(1.5);
+	transition: all 0.4s ease 0s;
+	color: #19c309;
+}
+
+
+/* .num-list li:hover + li {
+	color: rgb(223, 107, 223);
+	font-weight: 700;
+	text-decoration: none;
+} */
+
+
+.food-girl {
+	margin: 0px 0px 50px 0px;
+}
+
+.food-girl:before {
+	content: "Want something to eat?";
+	padding: 30px 10px;
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	display: block;
+	max-width: 800px;
+	background-color: rgb(53, 158, 158);
+	color: #6dd4cf;
+	border-radius: 50px;
+	margin: 0 auto 20px;
+}
+
+.food-girl:hover::before {
+	background-color: #83de7b;
+	transition: all 0.4s ease 0s;
+	color: #2b4792;
+	font-weight: 700;
+}
+
+.food-girl:active::before {
+	background-color: #d44feb;
+	transition: all 0.4s ease 0s;
+	color: #6d88e0;
+}
+
+.girl-eat {
+	display: inline-block;
+	max-width: 350px;
+	min-height: 380px;
+	margin: 0px 0px 0px 600px;
+}
+
+.girl-eat:hover {
+	transition: all 0.3s ease 0s;
+	transform: rotate(5deg) scale(1.5);
+}
+
+.cupcake {
+	max-width: 250px;
+	max-height: 100px;
+}
+
+/* Хочу скрывать капкейкм */
+.block-cupcake {
+	display: block;
+	margin: 0px 0px 50px 0px;
+}
+
+/* Важно запомнить вешать :hover на родителя и потом нет мигания */
+ .block-cupcake:hover .cupcake{
+	visibility: hidden;
+} 
+
+/* .cupcake:hover {
+	visibility: hidden;
+} */
+
+
+.button-figma {
+	background-color: #3191a0;
+	border: 3px solid #056b68;
+	display: inline-block;
+	padding: 15px 30px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	box-shadow: 0 10px 0 0 #cce871;
+	margin: 0px 0px 30px 60px;
+}
+
+.button-figma:hover {
+	background-color: #abc557;
+	display: inline-block;
+}
+
+.button-figma:hover {
+	background-color: #e27fe6;
+	display: inline-block;
+}
+
+
+
+/* Game block */
+.text {
+   text-align: center;
+   font-weight: 400;
+   line-height: 1.5;
+   margin: 0px 0px 20px 0px;
+   font-size: 35px;
+   letter-spacing: 1.5px;
+}
+.text-go {
+	margin: -10px 0px 0px 10px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	font-size: 28px;
+	min-width: 150px;
+}
+
+.box1 {
+   width: 150px;
+   height: 150px;
+   border-radius: 80px;
+   margin: 0px 0px 0px 20px;
+}
+
+
+
+.box2 {
+   width: 250px;
+   height: 30px;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   background-color: rgba(24, 181, 164, 0.5);
+   visibility: hidden;
+}
+.box1:hover + .box2 {
+   visibility: visible;
+}
+.box2:hover {
+   visibility: visible;
+}
+
+.box3 {
+   width: 40px;
+   height: 315px;
+   margin-left: 210px;
+   background-color: rgb(255, 253, 132);
+   visibility: hidden;
+}
+
+.box2:hover + .box3 {
+   visibility: visible;
+}
+.box3:hover {
+   visibility: visible;
+}
+
+.box4 {
+   width: 220px;
+   height: 20px;
+   margin-left: 210px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   background-color: rgb(212, 93, 248);
+   visibility: hidden;
+}
+.box3:hover + .box4 {
+   visibility: visible;
+}
+.box4:hover {
+   visibility: visible;
+}
+
+.box5 {
+   width: 30px;
+   height: 180px;
+   margin-top: -200px;
+   margin-left: 400px;
+   background-color: rgb(93, 134, 248);
+   visibility: hidden;
+}
+.box4:hover + .box5 {
+   visibility: visible;
+}
+.box5:hover {
+   visibility: visible;
+}
+
+.box6 {
+   width: 150px;
+   height: 30px;
+   margin-top: -200px;
+   margin-left: 400px;
+   border-top-left-radius: 30px;
+   border-top-right-radius: 30px;
+   background-color: rgb(76, 245, 90);
+   visibility: hidden;
+}
+.box5:hover + .box6 {
+   visibility: visible;
+}
+
+.box6:hover {
+   visibility: visible;
+}
+
+.box7 {
+   width: 30px;
+   height: 380px;
+   margin-top: -30px;
+   margin-left: 520px;
+   border-top-right-radius: 30px;
+   border-bottom-left-radius: 30px;
+   background-color: rgb(245, 130, 76);
+   visibility: hidden;
+}
+
+.box6:hover + .box7 {
+   visibility: visible;
+}
+
+.box7:hover {
+   visibility: visible;
+}
+
+.box8 {
+   width: 240px;
+   height: 30px;
+   margin-top: -30px;
+   margin-left: 520px;
+   border-bottom-right-radius: 30px;
+   border-bottom-left-radius: 30px;
+   background-color: rgb(194, 9, 200);
+   visibility: hidden;
+}
+.box7:hover + .box8 {
+   visibility: visible;
+}
+
+.box8:hover {
+   visibility: visible;
+}
+
+.box9 {
+   width: 35px;
+   height: 140px;
+   margin-top: -165px;
+   margin-left: 725px;
+   border-top-left-radius: 35px;
+   background-color: rgb(74, 131, 91);
+   visibility: hidden;
+}
+
+.box8:hover + .box9 {
+   visibility: visible;
+}
+
+.box9:hover {
+   visibility: visible;
+}
+
+.box10 {
+   width: 320px;
+   height: 25px;
+   margin-top: -140px;
+   margin-left: 725px;
+   border-top-right-radius: 25px;
+   border-top-left-radius: 40px;
+   background-color: rgb(250, 104, 218);
+   visibility: hidden;
+}
+.box9:hover + .box10 {
+   visibility: visible;
+}
+
+.box10:hover {
+   visibility: visible;
+}
+
+.box11 {
+   width: 20px;
+   height: 240px;
+   margin-left: 1025px;
+   background-color: rgb(88, 87, 184);
+   visibility: hidden;
+}
+.box10:hover + .box11 {
+   visibility: visible;
+}
+
+.box11:hover {
+   visibility: visible;
+}
+
+.box-gift {
+   margin-left: 800px;
+   visibility: hidden;
+}
+
+.box12 {
+   max-width: 280px;
+   min-height: 200px;
+   background: url("../img/creativity.png") center / 200px auto no-repeat;
+}
+.text-2 {
+   text-align: right;
+   font-weight: 400;
+   line-height: 1.5;
+   font-size: 25px;
+   margin-right: 120px;
+}
+
+.box11:hover + .box-gift {
+   visibility: visible;
+}
+
+.box-gift:hover {
+   visibility: visible;
+   transition: all 0.4s ease 0s;
+   transform: rotate(3deg) scale(1.5);
+}

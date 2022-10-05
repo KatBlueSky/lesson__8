@@ -1,0 +1,149 @@
+/* &display=swap */
+
+/* ---------------------------Блок 1------------------------------------ */
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+body {
+    font-family: "Lato", Arial, serif;
+    font-size: 16px;
+    color: #424551;
+}
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 100%;
+    max-width: 600px;
+}
+
+.go-back {
+    padding: 20px 0px 0px 0px;
+	 margin-bottom: 50px;
+}
+
+a {
+   color: rgb(165, 165, 165, 0.8);
+   font-size: 14px;
+	display: inline-block;
+	max-width: 300px;
+	min-height: 30px;
+	background-color: rgb(98, 166, 166);
+   border: 2px solid #424551;
+	border-radius: 50px;
+	padding: 10px;
+	color: rgb(30, 64, 65);
+	font-weight: 700;
+	font-size: 15px;
+	text-align: center;
+}
+
+
+.block-up{
+	margin-bottom: 100px;
+}
+
+.course-title{
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 40px;
+}
+
+.text-course{
+	line-height: 160%;
+	margin-bottom: 48px;
+}
+
+.learn-subtitle{
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 117%;
+	margin-bottom: 24px;
+}
+
+.item-learn{
+	margin: 0px 0px 4px 0px;
+	line-height: 117%;
+	background: url(../img/check.svg) 0 1px / 16px no-repeat;
+	padding-left: 32px; 
+		/* margin-bottom: 12px; */
+}
+
+.curator{
+	margin-bottom: 32px;
+}
+
+.text-curator{
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+	margin-bottom: 8px;	
+}
+
+h2{
+font-size: 46px;
+font-weight: 900;
+line-height: 130%;
+color: #1E212C;
+margin-bottom: 16px;
+}
+
+.subtitle-curator{
+	font-size: 20px;
+	color: #787A80;
+	line-height: 150%;
+}
+
+
+.evaluations{
+	margin-bottom:32px;
+}
+
+.rate,
+.courses,
+.students{
+	margin: 15px 0 0px 0px;
+}
+
+
+.rate::before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: url(..//img/Star.png) 0 0 / 16px no-repeat;
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+
+.courses::before {
+	content: "";
+	width: 16px;
+		height: 16px;
+	background: url(..//img/Play.png) 0 0/ 16px no-repeat;
+	display: inline-block;
+		margin: 0 10px 0 0;
+}
+
+.students::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: url(..//img/Profile.png) 0 0 / 16px no-repeat;
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+
+.curator-text{
+	line-height: 160%;
+	margin-bottom: 24px;
+}
+
+.behance,
+.twitter,
+.linkedin{
+	margin-left: 24px;
+}
+
